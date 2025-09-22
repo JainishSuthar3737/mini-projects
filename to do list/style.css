@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    &::-webkit-scrollbar{
+        width: 10px;
+        height: 10px;
+        background: rgba(253, 89, 89, 0);
+    }
+    &::-webkit-scrollbar-thumb{
+        background: orangered;
+        border-radius: 10px;
+    }
+    &::-webkit-scrollbar-corner{
+        display: none;
+    }
+    overflow-x: hidden;
+}
+.container{
+    background-color: rgba(255, 255, 255, 0.098) ;
+    height: 100px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: solid 2px white;
+    border-radius: 8px;
+}
+body{
+    background: #000000;
+    height: 100vh;
+    width: 100vw;
+    /* background-image: url('./sea-3352341_1280.jpg'); */
+    /* display: flex; */
+    padding-top: 28vh;
+    padding-left: 65vh;
+    /* justify-content: center; */
+}
+.input{
+    display: flex;
+    align-items: center;
+}
+input{
+    width: 300px;
+    height: 30px;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    border-radius: 3px;
+    border: solid black;
+    margin-right: 150px;
+    /* margin-top: 20p */
+    text-align: center;
+    overflow: auto;
+}
+.button{
+    height: 30px;
+    width: 100px;
+    background-color: rgb(255, 68, 0);
+    border-radius: 3px;
+    border: solid rgb(255, 68, 0);
+
+}
+.line{
+    display: flex;
+    height: 0;
+    width: 90%;
+    border: solid 0.5px white;
+    margin-top: 20px;
+    
+}
+
+
+.display{
+    min-height: 100px;
+    height: auto;
+    width: 600px;
+    background-color: rgba(255, 255, 255, 0.098);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    border: solid 2px white;
+    border-radius: 8px; 
+    background-color: rgba(255, 255, 255, 0.098) ;
+    margin-top: 2px;
+    display: flex;
+    align-items: center;
+
+}
+
+
+
+.bellowbutton{
+    height: 30px;
+    width: 100px;
+    background-color: rgb(255, 68, 0);
+    border-radius: 3px;
+    border: solid rgb(255, 68, 0);
+    /* margin-bottom: 20px; */
+    /* margin-left: 400px;
+    margin-top: 30px; */
+}
+
+.task-data{
+    width: 470px;
+    padding: 25px ;
+    text-align: start;
+}
