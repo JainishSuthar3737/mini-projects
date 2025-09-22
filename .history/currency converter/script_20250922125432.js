@@ -1,0 +1,24 @@
+const convertBtn = document.getElementById("convert-btn");
+const amountInput = document.getElementById("amount");
+const fromCurrency = document.getElementById("from-currency");
+const toCurrency = document.getElementById("to-currency");
+const result = document.getElementById("result");
+
+// Hardcoded exchange rates for simplicity
+const exchangeRates = {
+  USD: { USD: 1, EUR: 0.91, INR: 82.5 },
+  EUR: { USD: 1.1, EUR: 1, INR: 90.5 },
+  INR: { USD: 0.012, EUR: 0.011, INR: 1 },
+};
+
+convertBtn.addEventListener("click", () => {
+  const amount = parseFloat(amountInput.value);
+  if (isNaN(amount)) {
+    result.textContent = "Please enter a valid number";
+    return;
+  }
+  const from = fromCurrency.value;
+  const to = toCurrency.value;
+  const converted = amount * exchangeRates[from][to];
+  result.textContent = `${amount} ${from} = ${converted.toFixed(2)} ${to}`;
+});
